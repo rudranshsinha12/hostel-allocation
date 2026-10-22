@@ -1,0 +1,272 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    background-color: white;
+
+    color: #4a4035;
+
+}
+
+
+/* Header */
+
+header {
+
+    background-color: #eadcc8;
+
+    color: #4a4035;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+header h1 {
+
+    margin: 0;
+
+}
+
+
+/* Navigation */
+
+nav {
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 14px;
+
+    border-bottom: 2px solid #eadcc8;
+
+}
+
+nav a {
+
+    color: #6b5842;
+
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+nav a:hover {
+
+    color: #a48660;
+
+}
+
+
+/* Sections */
+
+section {
+
+    padding: 35px;
+
+    text-align: center;
+
+}
+
+.welcome {
+
+    background-color: white;
+
+}
+
+.welcome h2 {
+
+    color: #6b5842;
+
+}
+
+
+/* Apply Button */
+
+.button {
+
+    display: inline-block;
+
+    background-color: #c6a980;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+
+    border-radius: 4px;
+
+}
+
+
+/* Hostel Cards */
+
+.hostel-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.hostel-card {
+
+    background-color: white;
+
+    width: 250px;
+
+    padding: 20px;
+
+    border: 1px solid #dfcfb8;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px #eeeeee;
+
+}
+
+.hostel-card h3 {
+
+    color: #6b5842;
+
+}
+
+
+/* Hostel Button */
+
+.hostel-card button {
+
+    background-color: #c6a980;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+
+/* Form */
+
+form {
+
+    background-color: white;
+
+    width: 400px;
+
+    max-width: 90%;
+
+    margin: auto;
+
+    padding: 25px;
+
+    border: 1px solid #dfcfb8;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px #eeeeee;
+
+    text-align: left;
+
+}
+
+
+/* Labels */
+
+label {
+
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+/* Input and Select */
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 9px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d8c6aa;
+
+    border-radius: 4px;
+
+    background-color: white;
+
+}
+
+
+/* Submit Button */
+
+.submit-button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    background-color: #c6a980;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+.submit-button:hover,
+.hostel-card button:hover {
+
+    background-color: #a48660;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    background-color: #eadcc8;
+
+    color: #4a4035;
+
+    text-align: center;
+
+    padding: 15px;
+
+}
