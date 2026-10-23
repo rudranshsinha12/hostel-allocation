@@ -1,189 +1,452 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostel Allocation System</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <header>
-
+    <header id="home">
         <h1>Hostel Allocation System</h1>
-
-        <p>Hostel Room Allocation Portal</p>
-
     </header>
 
-
     <nav>
-
         <a href="#home">Home</a>
-
-        <a href="#hostels">Hostels</a>
-
-        <a href="#allocation">Allocation</a>
-
+        <a href="#boys">Boys Hostel</a>
+        <a href="#girls">Girls Hostel</a>
+        <a href="#apply">Room Allocation</a>
     </nav>
 
+    <main>
 
-    <section id="home" class="welcome">
+        <section class="welcome">
+            <h2>Hostel Room Details</h2>
+            <p>Select a hostel, tower and room to view room details.</p>
+        </section>
 
-        <h2>Welcome to Hostel Allocation</h2>
+        <section id="boys">
+            <h2>Boys Hostel</h2>
 
-        <p>
-            This website helps students view available hostels
-            and submit a basic room allocation request.
-        </p>
+            <div class="tower-list">
+                <a href="#boys-a">Tower A</a>
+                <a href="#boys-b">Tower B</a>
+                <a href="#boys-c">Tower C</a>
+                <a href="#boys-d">Tower D</a>
+                <a href="#boys-e">Tower E</a>
+                <a href="#boys-f">Tower F</a>
+            </div>
+        </section>
 
-        <a href="#allocation" class="button">
-            Apply for Hostel
-        </a>
+        <section id="boys-a" class="tower-section">
+            <h2>Tower A</h2>
 
-    </section>
-
-
-    <section id="hostels">
-
-        <h2>Available Hostels</h2>
-
-        <div class="hostel-container">
-
-
-            <div class="hostel-card">
-
-                <h3>Hostel A</h3>
-
-                <p>Type: Boys Hostel</p>
-
-                <p>Rooms Available: 20</p>
-
-                <p>Room Type: 2 Seater</p>
-
-                <button>View Details</button>
-
+            <div class="floor-list">
+                <a href="#a11">Floor 11</a>
+                <a href="#a10">Floor 10</a>
+                <a href="#a9">Floor 9</a>
+                <a href="#a8">Floor 8</a>
+                <a href="#a7">Floor 7</a>
+                <a href="#a6">Floor 6</a>
+                <a href="#a5">Floor 5</a>
+                <a href="#a4">Floor 4</a>
+                <a href="#a3">Floor 3</a>
+                <a href="#a2">Floor 2</a>
+                <a href="#a1">Floor 1</a>
             </div>
 
+            <div id="a11" class="floor"><h3>Floor 11</h3><div class="room-list"><a href="#a111">Room 1</a><a href="#a112">Room 2</a><a href="#a113">Room 3</a></div></div>
+            <div id="a10" class="floor"><h3>Floor 10</h3><div class="room-list"><a href="#a101">Room 1</a><a href="#a102">Room 2</a><a href="#a103">Room 3</a></div></div>
+            <div id="a9" class="floor"><h3>Floor 9</h3><div class="room-list"><a href="#a91">Room 1</a><a href="#a92">Room 2</a><a href="#a93">Room 3</a></div></div>
+            <div id="a8" class="floor"><h3>Floor 8</h3><div class="room-list"><a href="#a81">Room 1</a><a href="#a82">Room 2</a><a href="#a83">Room 3</a></div></div>
+            <div id="a7" class="floor"><h3>Floor 7</h3><div class="room-list"><a href="#a71">Room 1</a><a href="#a72">Room 2</a><a href="#a73">Room 3</a></div></div>
+            <div id="a6" class="floor"><h3>Floor 6</h3><div class="room-list"><a href="#a61">Room 1</a><a href="#a62">Room 2</a><a href="#a63">Room 3</a></div></div>
+            <div id="a5" class="floor"><h3>Floor 5</h3><div class="room-list"><a href="#a51">Room 1</a><a href="#a52">Room 2</a><a href="#a53">Room 3</a></div></div>
+            <div id="a4" class="floor"><h3>Floor 4</h3><div class="room-list"><a href="#a41">Room 1</a><a href="#a42">Room 2</a><a href="#a43">Room 3</a></div></div>
+            <div id="a3" class="floor"><h3>Floor 3</h3><div class="room-list"><a href="#a31">Room 1</a><a href="#a32">Room 2</a><a href="#a33">Room 3</a></div></div>
+            <div id="a2" class="floor"><h3>Floor 2</h3><div class="room-list"><a href="#a21">Room 1</a><a href="#a22">Room 2</a><a href="#a23">Room 3</a></div></div>
+            <div id="a1" class="floor"><h3>Floor 1</h3><div class="room-list"><a href="#a11r1">Room 1</a><a href="#a11r2">Room 2</a><a href="#a11r3">Room 3</a></div></div>
+        </section>
 
-            <div class="hostel-card">
+        <section class="room-details">
+            <h2>Tower A Room Details</h2>
+            <div class="details-grid">
+                <article id="a111"><h3>Floor 11 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a112"><h3>Floor 11 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a113"><h3>Floor 11 - Room 3</h3><p>Attached washroom</p></article>
 
-                <h3>Hostel B</h3>
+                <article id="a101"><h3>Floor 10 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a102"><h3>Floor 10 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a103"><h3>Floor 10 - Room 3</h3><p>Attached washroom</p></article>
 
-                <p>Type: Girls Hostel</p>
+                <article id="a91"><h3>Floor 9 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a92"><h3>Floor 9 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a93"><h3>Floor 9 - Room 3</h3><p>Attached washroom</p></article>
 
-                <p>Rooms Available: 15</p>
+                <article id="a81"><h3>Floor 8 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a82"><h3>Floor 8 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a83"><h3>Floor 8 - Room 3</h3><p>Attached washroom</p></article>
 
-                <p>Room Type: 2 Seater</p>
+                <article id="a71"><h3>Floor 7 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a72"><h3>Floor 7 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a73"><h3>Floor 7 - Room 3</h3><p>Attached washroom</p></article>
 
-                <button>View Details</button>
+                <article id="a61"><h3>Floor 6 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a62"><h3>Floor 6 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a63"><h3>Floor 6 - Room 3</h3><p>Attached washroom</p></article>
 
+                <article id="a51"><h3>Floor 5 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a52"><h3>Floor 5 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a53"><h3>Floor 5 - Room 3</h3><p>Attached washroom</p></article>
+
+                <article id="a41"><h3>Floor 4 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a42"><h3>Floor 4 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a43"><h3>Floor 4 - Room 3</h3><p>Attached washroom</p></article>
+
+                <article id="a31"><h3>Floor 3 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a32"><h3>Floor 3 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a33"><h3>Floor 3 - Room 3</h3><p>Attached washroom</p></article>
+
+                <article id="a21"><h3>Floor 2 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a22"><h3>Floor 2 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a23"><h3>Floor 2 - Room 3</h3><p>Attached washroom</p></article>
+
+                <article id="a11r1"><h3>Floor 1 - Room 1</h3><p>Common washroom</p></article>
+                <article id="a11r2"><h3>Floor 1 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="a11r3"><h3>Floor 1 - Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
+
+        <section id="boys-b" class="tower-section">
+            <h2>Tower B</h2>
+            <div class="floor-list">
+                <a href="#b10">Floor 10</a><a href="#b9">Floor 9</a>
+                <a href="#b8">Floor 8</a><a href="#b7">Floor 7</a>
+                <a href="#b6">Floor 6</a><a href="#b5">Floor 5</a>
+                <a href="#b4">Floor 4</a><a href="#b3">Floor 3</a>
+                <a href="#b2">Floor 2</a><a href="#b1">Floor 1</a>
             </div>
 
+            <div id="b10" class="floor"><h3>Floor 10</h3><div class="room-list"><a href="#b101">Room 1</a><a href="#b102">Room 2</a><a href="#b103">Room 3</a></div></div>
+            <div id="b9" class="floor"><h3>Floor 9</h3><div class="room-list"><a href="#b91">Room 1</a><a href="#b92">Room 2</a><a href="#b93">Room 3</a></div></div>
+            <div id="b8" class="floor"><h3>Floor 8</h3><div class="room-list"><a href="#b81">Room 1</a><a href="#b82">Room 2</a><a href="#b83">Room 3</a></div></div>
+            <div id="b7" class="floor"><h3>Floor 7</h3><div class="room-list"><a href="#b71">Room 1</a><a href="#b72">Room 2</a><a href="#b73">Room 3</a></div></div>
+            <div id="b6" class="floor"><h3>Floor 6</h3><div class="room-list"><a href="#b61">Room 1</a><a href="#b62">Room 2</a><a href="#b63">Room 3</a></div></div>
+            <div id="b5" class="floor"><h3>Floor 5</h3><div class="room-list"><a href="#b51">Room 1</a><a href="#b52">Room 2</a><a href="#b53">Room 3</a></div></div>
+            <div id="b4" class="floor"><h3>Floor 4</h3><div class="room-list"><a href="#b41">Room 1</a><a href="#b42">Room 2</a><a href="#b43">Room 3</a></div></div>
+            <div id="b3" class="floor"><h3>Floor 3</h3><div class="room-list"><a href="#b31">Room 1</a><a href="#b32">Room 2</a><a href="#b33">Room 3</a></div></div>
+            <div id="b2" class="floor"><h3>Floor 2</h3><div class="room-list"><a href="#b21">Room 1</a><a href="#b22">Room 2</a><a href="#b23">Room 3</a></div></div>
+            <div id="b1" class="floor"><h3>Floor 1</h3><div class="room-list"><a href="#b11r1">Room 1</a><a href="#b11r2">Room 2</a><a href="#b11r3">Room 3</a></div></div>
+        </section>
 
-            <div class="hostel-card">
-
-                <h3>Hostel C</h3>
-
-                <p>Type: Boys Hostel</p>
-
-                <p>Rooms Available: 10</p>
-
-                <p>Room Type: 3 Seater</p>
-
-                <button>View Details</button>
-
+        <section class="room-details">
+            <h2>Tower B Room Details</h2>
+            <div class="details-grid">
+                <article id="b101"><h3>Floor 10 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b102"><h3>Floor 10 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b103"><h3>Floor 10 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b91"><h3>Floor 9 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b92"><h3>Floor 9 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b93"><h3>Floor 9 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b81"><h3>Floor 8 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b82"><h3>Floor 8 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b83"><h3>Floor 8 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b71"><h3>Floor 7 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b72"><h3>Floor 7 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b73"><h3>Floor 7 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b61"><h3>Floor 6 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b62"><h3>Floor 6 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b63"><h3>Floor 6 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b51"><h3>Floor 5 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b52"><h3>Floor 5 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b53"><h3>Floor 5 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b41"><h3>Floor 4 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b42"><h3>Floor 4 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b43"><h3>Floor 4 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b31"><h3>Floor 3 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b32"><h3>Floor 3 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b33"><h3>Floor 3 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b21"><h3>Floor 2 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b22"><h3>Floor 2 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b23"><h3>Floor 2 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="b11r1"><h3>Floor 1 - Room 1</h3><p>Common washroom</p></article>
+                <article id="b11r2"><h3>Floor 1 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="b11r3"><h3>Floor 1 - Room 3</h3><p>Attached washroom</p></article>
             </div>
+        </section>
 
-        </div>
+        <section id="boys-c" class="tower-section">
+            <h2>Tower C</h2>
+            <div class="room-list">
+                <a href="#c1">Room 1</a><a href="#c2">Room 2</a><a href="#c3">Room 3</a>
+            </div>
+            <div class="details-grid">
+                <article id="c1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="c2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="c3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-    </section>
+        <section id="boys-d" class="tower-section">
+            <h2>Tower D</h2>
+            <div class="room-list">
+                <a href="#d1">Room 1</a><a href="#d2">Room 2</a><a href="#d3">Room 3</a>
+            </div>
+            <div class="details-grid">
+                <article id="d1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="d2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="d3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
+        <section id="boys-e" class="tower-section">
+            <h2>Tower E</h2>
+            <div class="room-list">
+                <a href="#e1">Room 1</a><a href="#e2">Room 2</a><a href="#e3">Room 3</a>
+            </div>
+            <div class="details-grid">
+                <article id="e1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="e2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="e3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-    <section id="allocation">
-
-        <h2>Hostel Allocation Form</h2>
-
-        <form>
-
-            <label>Student Name:</label>
-
-            <input type="text" placeholder="Enter your name" required>
-
-
-            <label>Student ID:</label>
-
-            <input type="text" placeholder="Enter student ID" required>
-
-
-            <label>Course:</label>
-
-            <input type="text" placeholder="Enter your course" required>
-
-
-            <label>Year:</label>
-
-            <select>
-
-                <option>Select Year</option>
-
-                <option>1st Year</option>
-
-                <option>2nd Year</option>
-
-                <option>3rd Year</option>
-
-                <option>4th Year</option>
-
-            </select>
-
-
-            <label>Select Hostel:</label>
-
-            <select>
-
-                <option>Select Hostel</option>
-
-                <option>Hostel A</option>
-
-                <option>Hostel B</option>
-
-                <option>Hostel C</option>
-
-            </select>
+        <section id="boys-f" class="tower-section">
+            <h2>Tower F</h2>
+            <div class="room-list">
+                <a href="#f1">Room 1</a><a href="#f2">Room 2</a><a href="#f3">Room 3</a>
+            </div>
+            <div class="details-grid">
+                <article id="f1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="f2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="f3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
 
-            <label>Room Type:</label>
+        <section id="girls">
+            <h2>Girls Hostel</h2>
+            <div class="tower-list">
+                <a href="#ga">Tower A</a>
+                <a href="#gb">Tower B</a>
+                <a href="#gc">Tower C</a>
+                <a href="#gd">Tower D</a>
+                <a href="#ge">Tower E</a>
+                <a href="#gf">Tower F</a>
+            </div>
+        </section>
 
-            <select>
+        <section id="ga" class="tower-section">
+            <h2>Tower A</h2>
+            <div class="floor-list">
+                <a href="#ga11">Floor 11</a><a href="#ga10">Floor 10</a>
+                <a href="#ga9">Floor 9</a><a href="#ga8">Floor 8</a>
+                <a href="#ga7">Floor 7</a><a href="#ga6">Floor 6</a>
+                <a href="#ga5">Floor 5</a><a href="#ga4">Floor 4</a>
+                <a href="#ga3">Floor 3</a><a href="#ga2">Floor 2</a>
+                <a href="#ga1">Floor 1</a>
+            </div>
+            <div id="ga11" class="floor"><h3>Floor 11</h3><div class="room-list"><a href="#ga111">Room 1</a><a href="#ga112">Room 2</a><a href="#ga113">Room 3</a></div></div>
+            <div id="ga10" class="floor"><h3>Floor 10</h3><div class="room-list"><a href="#ga101">Room 1</a><a href="#ga102">Room 2</a><a href="#ga103">Room 3</a></div></div>
+            <div id="ga9" class="floor"><h3>Floor 9</h3><div class="room-list"><a href="#ga91">Room 1</a><a href="#ga92">Room 2</a><a href="#ga93">Room 3</a></div></div>
+            <div id="ga8" class="floor"><h3>Floor 8</h3><div class="room-list"><a href="#ga81">Room 1</a><a href="#ga82">Room 2</a><a href="#ga83">Room 3</a></div></div>
+            <div id="ga7" class="floor"><h3>Floor 7</h3><div class="room-list"><a href="#ga71">Room 1</a><a href="#ga72">Room 2</a><a href="#ga73">Room 3</a></div></div>
+            <div id="ga6" class="floor"><h3>Floor 6</h3><div class="room-list"><a href="#ga61">Room 1</a><a href="#ga62">Room 2</a><a href="#ga63">Room 3</a></div></div>
+            <div id="ga5" class="floor"><h3>Floor 5</h3><div class="room-list"><a href="#ga51">Room 1</a><a href="#ga52">Room 2</a><a href="#ga53">Room 3</a></div></div>
+            <div id="ga4" class="floor"><h3>Floor 4</h3><div class="room-list"><a href="#ga41">Room 1</a><a href="#ga42">Room 2</a><a href="#ga43">Room 3</a></div></div>
+            <div id="ga3" class="floor"><h3>Floor 3</h3><div class="room-list"><a href="#ga31">Room 1</a><a href="#ga32">Room 2</a><a href="#ga33">Room 3</a></div></div>
+            <div id="ga2" class="floor"><h3>Floor 2</h3><div class="room-list"><a href="#ga21">Room 1</a><a href="#ga22">Room 2</a><a href="#ga23">Room 3</a></div></div>
+            <div id="ga1" class="floor"><h3>Floor 1</h3><div class="room-list"><a href="#ga11r1">Room 1</a><a href="#ga11r2">Room 2</a><a href="#ga11r3">Room 3</a></div></div>
+        </section>
 
-                <option>Select Room Type</option>
+        <section class="room-details">
+            <h2>Tower A Room Details</h2>
+            <div class="details-grid">
+                <article id="ga111"><h3>Floor 11 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga112"><h3>Floor 11 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga113"><h3>Floor 11 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga101"><h3>Floor 10 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga102"><h3>Floor 10 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga103"><h3>Floor 10 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga91"><h3>Floor 9 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga92"><h3>Floor 9 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga93"><h3>Floor 9 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga81"><h3>Floor 8 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga82"><h3>Floor 8 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga83"><h3>Floor 8 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga71"><h3>Floor 7 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga72"><h3>Floor 7 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga73"><h3>Floor 7 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga61"><h3>Floor 6 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga62"><h3>Floor 6 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga63"><h3>Floor 6 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga51"><h3>Floor 5 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga52"><h3>Floor 5 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga53"><h3>Floor 5 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga41"><h3>Floor 4 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga42"><h3>Floor 4 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga43"><h3>Floor 4 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga31"><h3>Floor 3 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga32"><h3>Floor 3 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga33"><h3>Floor 3 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga21"><h3>Floor 2 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga22"><h3>Floor 2 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga23"><h3>Floor 2 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="ga11r1"><h3>Floor 1 - Room 1</h3><p>Common washroom</p></article>
+                <article id="ga11r2"><h3>Floor 1 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="ga11r3"><h3>Floor 1 - Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-                <option>2 Seater</option>
+        <section id="gb" class="tower-section">
+            <h2>Tower B</h2>
+            <div class="floor-list">
+                <a href="#gb10">Floor 10</a><a href="#gb9">Floor 9</a>
+                <a href="#gb8">Floor 8</a><a href="#gb7">Floor 7</a>
+                <a href="#gb6">Floor 6</a><a href="#gb5">Floor 5</a>
+                <a href="#gb4">Floor 4</a><a href="#gb3">Floor 3</a>
+                <a href="#gb2">Floor 2</a><a href="#gb1">Floor 1</a>
+            </div>
+            <div id="gb10" class="floor"><h3>Floor 10</h3><div class="room-list"><a href="#gb101">Room 1</a><a href="#gb102">Room 2</a><a href="#gb103">Room 3</a></div></div>
+            <div id="gb9" class="floor"><h3>Floor 9</h3><div class="room-list"><a href="#gb91">Room 1</a><a href="#gb92">Room 2</a><a href="#gb93">Room 3</a></div></div>
+            <div id="gb8" class="floor"><h3>Floor 8</h3><div class="room-list"><a href="#gb81">Room 1</a><a href="#gb82">Room 2</a><a href="#gb83">Room 3</a></div></div>
+            <div id="gb7" class="floor"><h3>Floor 7</h3><div class="room-list"><a href="#gb71">Room 1</a><a href="#gb72">Room 2</a><a href="#gb73">Room 3</a></div></div>
+            <div id="gb6" class="floor"><h3>Floor 6</h3><div class="room-list"><a href="#gb61">Room 1</a><a href="#gb62">Room 2</a><a href="#gb63">Room 3</a></div></div>
+            <div id="gb5" class="floor"><h3>Floor 5</h3><div class="room-list"><a href="#gb51">Room 1</a><a href="#gb52">Room 2</a><a href="#gb53">Room 3</a></div></div>
+            <div id="gb4" class="floor"><h3>Floor 4</h3><div class="room-list"><a href="#gb41">Room 1</a><a href="#gb42">Room 2</a><a href="#gb43">Room 3</a></div></div>
+            <div id="gb3" class="floor"><h3>Floor 3</h3><div class="room-list"><a href="#gb31">Room 1</a><a href="#gb32">Room 2</a><a href="#gb33">Room 3</a></div></div>
+            <div id="gb2" class="floor"><h3>Floor 2</h3><div class="room-list"><a href="#gb21">Room 1</a><a href="#gb22">Room 2</a><a href="#gb23">Room 3</a></div></div>
+            <div id="gb1" class="floor"><h3>Floor 1</h3><div class="room-list"><a href="#gb11r1">Room 1</a><a href="#gb11r2">Room 2</a><a href="#gb11r3">Room 3</a></div></div>
+        </section>
 
-                <option>3 Seater</option>
+        <section class="room-details">
+            <h2>Tower B Room Details</h2>
+            <div class="details-grid">
+                <article id="gb101"><h3>Floor 10 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb102"><h3>Floor 10 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb103"><h3>Floor 10 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb91"><h3>Floor 9 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb92"><h3>Floor 9 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb93"><h3>Floor 9 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb81"><h3>Floor 8 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb82"><h3>Floor 8 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb83"><h3>Floor 8 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb71"><h3>Floor 7 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb72"><h3>Floor 7 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb73"><h3>Floor 7 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb61"><h3>Floor 6 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb62"><h3>Floor 6 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb63"><h3>Floor 6 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb51"><h3>Floor 5 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb52"><h3>Floor 5 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb53"><h3>Floor 5 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb41"><h3>Floor 4 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb42"><h3>Floor 4 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb43"><h3>Floor 4 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb31"><h3>Floor 3 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb32"><h3>Floor 3 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb33"><h3>Floor 3 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb21"><h3>Floor 2 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb22"><h3>Floor 2 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb23"><h3>Floor 2 - Room 3</h3><p>Attached washroom</p></article>
+                <article id="gb11r1"><h3>Floor 1 - Room 1</h3><p>Common washroom</p></article>
+                <article id="gb11r2"><h3>Floor 1 - Room 2</h3><p>Attached washroom</p></article>
+                <article id="gb11r3"><h3>Floor 1 - Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-                <option>4 Seater</option>
+        <section id="gc" class="tower-section">
+            <h2>Tower C</h2>
+            <div class="room-list"><a href="#gc1">Room 1</a><a href="#gc2">Room 2</a><a href="#gc3">Room 3</a></div>
+            <div class="details-grid">
+                <article id="gc1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="gc2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="gc3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-            </select>
+        <section id="gd" class="tower-section">
+            <h2>Tower D</h2>
+            <div class="room-list"><a href="#gd1">Room 1</a><a href="#gd2">Room 2</a><a href="#gd3">Room 3</a></div>
+            <div class="details-grid">
+                <article id="gd1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="gd2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="gd3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
+        <section id="ge" class="tower-section">
+            <h2>Tower E</h2>
+            <div class="room-list"><a href="#ge1">Room 1</a><a href="#ge2">Room 2</a><a href="#ge3">Room 3</a></div>
+            <div class="details-grid">
+                <article id="ge1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="ge2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="ge3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-            <button type="submit" class="submit-button">
-                Submit Application
-            </button>
+        <section id="gf" class="tower-section">
+            <h2>Tower F</h2>
+            <div class="room-list"><a href="#gf1">Room 1</a><a href="#gf2">Room 2</a><a href="#gf3">Room 3</a></div>
+            <div class="details-grid">
+                <article id="gf1"><h3>Room 1</h3><p>Common washroom</p></article>
+                <article id="gf2"><h3>Room 2</h3><p>Attached washroom</p></article>
+                <article id="gf3"><h3>Room 3</h3><p>Attached washroom</p></article>
+            </div>
+        </section>
 
-        </form>
+        <section id="apply" class="apply-section">
+            <h2>Room Allocation</h2>
 
-    </section>
+            <form action="#apply" method="get">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" required>
+
+                <label for="course">Course</label>
+                <input type="text" id="course" name="course" required>
+
+                <label for="hostel">Hostel</label>
+                <select id="hostel" name="hostel">
+                    <option>Boys Hostel</option>
+                    <option>Girls Hostel</option>
+                </select>
+
+                <label for="tower">Tower</label>
+                <select id="tower" name="tower">
+                    <option>Tower A</option>
+                    <option>Tower B</option>
+                    <option>Tower C</option>
+                    <option>Tower D</option>
+                    <option>Tower E</option>
+                    <option>Tower F</option>
+                </select>
+
+                <label for="floorNumber">Floor Number</label>
+                <input type="number" id="floorNumber" name="floorNumber" min="1" max="11" required>
+
+                <label for="roomNumber">Room Number</label>
+                <select id="roomNumber" name="roomNumber">
+                    <option>Room 1</option>
+                    <option>Room 2</option>
+                    <option>Room 3</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
 
     <footer>
-
         <p>Hostel Allocation System</p>
-
     </footer>
 
 </body>
 </html>
+
+
