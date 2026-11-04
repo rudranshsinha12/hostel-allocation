@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -398,47 +396,151 @@
         </section>
 
         <section id="apply" class="apply-section">
-            <h2>Room Allocation</h2>
 
-            <form action="#apply" method="get">
-                <label for="name">Student Name</label>
-                <input type="text" id="name" name="name" required>
+    <h2>Hostel Application Form</h2>
+    <p>Fill in the details below to apply for hostel accommodation.</p>
 
-                <label for="studentId">Student ID</label>
-                <input type="text" id="studentId" name="studentId" required>
+    <form action="#apply" method="get">
 
-                <label for="course">Course</label>
-                <input type="text" id="course" name="course" required>
+        
+        <fieldset>
+            <legend>Student Details</legend>
 
-                <label for="hostel">Hostel</label>
-                <select id="hostel" name="hostel">
-                    <option>Boys Hostel</option>
-                    <option>Girls Hostel</option>
-                </select>
+            <label for="studentName">Full Name:</label>
+            <input type="text" id="studentName"
+                   name="studentName" required>
 
-                <label for="tower">Tower</label>
-                <select id="tower" name="tower">
-                    <option>Tower A</option>
-                    <option>Tower B</option>
-                    <option>Tower C</option>
-                    <option>Tower D</option>
-                    <option>Tower E</option>
-                    <option>Tower F</option>
-                </select>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId"
+                   name="studentId" required>
 
-                <label for="floorNumber">Floor Number</label>
-                <input type="number" id="floorNumber" name="floorNumber" min="1" max="11" required>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="BTech">B.Tech</option>
+                <option value="BA">B.A.</option>
+                <option value="BSc">B.Sc.</option>
+                <option value="MA">M.A.</option>
+                <option value="MSc">M.Sc.</option>
+                <option value="MTech">M.Tech</option>
+                <option value="PhD">Ph.D.</option>
+                <option value="Other">Other</option>
+            </select>
 
-                <label for="roomNumber">Room Number</label>
-                <select id="roomNumber" name="roomNumber">
-                    <option>Room 1</option>
-                    <option>Room 2</option>
-                    <option>Room 3</option>
-                </select>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email"
+                   name="email" required>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone"
+                   name="phone" required>
+
+            <label for="address">Permanent Address:</label>
+            <textarea id="address" name="address"
+                      rows="3" required></textarea>
+        </fieldset>
+
+
+        
+        <fieldset>
+            <legend>Parent / Guardian Details</legend>
+
+            <label for="guardianName">Parent / Guardian Name:</label>
+            <input type="text" id="guardianName"
+                   name="guardianName" required>
+
+            <label for="relationship">Relationship:</label>
+            <select id="relationship" name="relationship" required>
+                <option value="">Select Relationship</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Guardian">Guardian</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="guardianPhone">Parent / Guardian Phone:</label>
+            <input type="tel" id="guardianPhone"
+                   name="guardianPhone" required>
+
+            <label for="guardianEmail">Parent / Guardian Email:</label>
+            <input type="email" id="guardianEmail"
+                   name="guardianEmail">
+        </fieldset>
+
+
+        
+        <fieldset>
+            <legend>Emergency Contact</legend>
+
+            <label for="emergencyName">Emergency Contact Name:</label>
+            <input type="text" id="emergencyName"
+                   name="emergencyName" required>
+
+            <label for="emergencyRelation">Relationship:</label>
+            <input type="text" id="emergencyRelation"
+                   name="emergencyRelation" required>
+
+            <label for="emergencyPhone">Emergency Phone Number:</label>
+            <input type="tel" id="emergencyPhone"
+                   name="emergencyPhone" required>
+        </fieldset>
+
+
+        
+        <fieldset>
+            <legend>Hostel Preference</legend>
+
+            <label for="hostel">Hostel Section:</label>
+            <select id="hostel" name="hostel" required>
+                <option value="">Select Hostel</option>
+                <option value="Boys">Boys Hostel</option>
+                <option value="Girls">Girls Hostel</option>
+            </select>
+
+            <label for="tower">Preferred Tower:</label>
+            <select id="tower" name="tower" required>
+                <option value="">Select Tower</option>
+                <option value="A">Tower A</option>
+                <option value="B">Tower B</option>
+                <option value="C">Tower C</option>
+                <option value="D">Tower D</option>
+                <option value="E">Tower E</option>
+                <option value="F">Tower F</option>
+            </select>
+
+            <label for="floorNumber">Preferred Floor:</label>
+            <input type="number" id="floorNumber"
+                   name="floorNumber"
+                   min="1" max="11" required>
+
+            <label for="roomNumber">Preferred Room:</label>
+            <select id="roomNumber" name="roomNumber" required>
+                <option value="">Select Room</option>
+                <option value="1">Room 1</option>
+                <option value="2">Room 2</option>
+                <option value="3">Room 3</option>
+            </select>
+        </fieldset>
+
+
+        
+        <fieldset>
+            <legend>Declaration</legend>
+
+            <label>
+                <input type="checkbox" name="declaration"
+                       value="accepted" required>
+                I confirm that the information provided is correct.
+            </label>
+        </fieldset>
+
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</section>
 
     </main>
 
@@ -448,5 +550,3 @@
 
 </body>
 </html>
-
-

@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -259,5 +258,112 @@ footer p {
     .room-details,
     .apply-section {
         padding: 14px;
+    }
+}
+
+/* Responsive tower layout */
+.tower-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .tower-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .tower-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hostel Application Form */
+
+.apply-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.apply-section h2 {
+    text-align: center;
+    color: #174a35;
+}
+
+.apply-section p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.apply-section fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.apply-section legend {
+    font-weight: bold;
+    color: #174a35;
+    padding: 0 8px;
+}
+
+.apply-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.apply-section input:not([type="checkbox"]),
+.apply-section select,
+.apply-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.apply-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.apply-section button {
+    padding: 12px 20px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #174a35;
+    color: white;
+    cursor: pointer;
+}
+
+.apply-section button[type="reset"] {
+    background-color: #666666;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+    .apply-section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .apply-section fieldset {
+        padding: 12px;
+    }
+
+    .apply-section button {
+        width: 100%;
+        margin: 8px 0;
     }
 }
