@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f2;
+    color: #292d29;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #354d3b;
+    color: white;
+    padding: 24px 6%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav {
+    background-color: white;
+    padding: 13px 6%;
+    border-bottom: 1px solid #d4d8d1;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 25px;
+    color: #303b32;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #527557;
+    text-decoration: underline;
+}
+
+main {
+    width: 88%;
+    max-width: 1150px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 25px;
+    scroll-margin-top: 15px;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.welcome {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #d6dbd3;
+}
+
+.welcome p {
+    margin-bottom: 0;
+}
+
+.tower-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tower-list a {
+    display: block;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #cfd5cc;
+    color: #303b32;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.tower-list a:hover {
+    background-color: #e7ece4;
+    border-color: #687d68;
+}
+
+.tower-section,
+.room-details,
+.apply-section {
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #d6dbd3;
+}
+
+.floor-list,
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.floor-list a,
+.room-list a {
+    display: inline-block;
+    padding: 9px 13px;
+    background-color: #f0f2ee;
+    border: 1px solid #cfd5cc;
+    color: #303b32;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.floor-list a:hover,
+.room-list a:hover {
+    background-color: #dce6d9;
+    border-color: #687d68;
+}
+
+.floor {
+    padding: 14px 0;
+    border-top: 1px solid #dfe3dc;
+    scroll-margin-top: 15px;
+}
+
+.floor h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.details-grid article {
+    padding: 15px;
+    border: 1px solid #d4d9d1;
+    background-color: #fafbf9;
+    scroll-margin-top: 15px;
+}
+
+.details-grid article:target {
+    background-color: #e6ede3;
+    border-color: #536e55;
+}
+
+.details-grid article h3 {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.details-grid article p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.apply-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin: 12px 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #cbd1c7;
+    background-color: white;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 1px solid #536e55;
+}
+
+button {
+    margin-top: 18px;
+    padding: 10px 22px;
+    border: 1px solid #354d3b;
+    border-radius: 0;
+    background-color: #354d3b;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #263a2b;
+}
+
+footer {
+    padding: 15px 6%;
+    background-color: #e2e5df;
+    border-top: 1px solid #d1d6cd;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 94%;
+    }
+
+    .tower-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        margin-right: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tower-list,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .tower-section,
+    .room-details,
+    .apply-section {
+        padding: 14px;
+    }
+}
+/* Responsive tower layout */
+.tower-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .tower-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .tower-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hostel Application Form */
+
+.apply-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.apply-section h2 {
+    text-align: center;
+    color: #174a35;
+}
+
+.apply-section p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.apply-section fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.apply-section legend {
+    font-weight: bold;
+    color: #174a35;
+    padding: 0 8px;
+}
+
+.apply-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.apply-section input:not([type="checkbox"]),
+.apply-section select,
+.apply-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.apply-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.apply-section button {
+    padding: 12px 20px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #174a35;
+    color: white;
+    cursor: pointer;
+}
+
+.apply-section button[type="reset"] {
+    background-color: #666666;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+    .apply-section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .apply-section fieldset {
+        padding: 12px;
+    }
+
+    .apply-section button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
