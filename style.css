@@ -396,3 +396,215 @@ footer span { color: #b6c9df; }
         margin: 8px 0;
     }
 }
+
+/* =================================
+   HOSTEL PORTAL - SECTION STYLING
+================================= */
+
+/* Theme variables */
+:root {
+    --bg: #f4f7fb;
+    --ink: #26364a;
+    --navy: #102b52;
+    --blue: #1675bd;
+    --bright: #2689d8;
+    --pale: #eaf4fc;
+    --muted: #74859c;
+    --line: #dce6f0;
+    --green: #16a36a;
+    --red: #dc3545;
+    --shadow: 0 12px 35px rgba(25, 55, 90, 0.08);
+}
+
+/* Main hostel sections */
+.tower-section,
+.room-details,
+.apply-section {
+    width: 84%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 28px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.tower-section h2,
+.room-details h2 {
+    color: var(--navy);
+    font-family: Manrope, sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Tower navigation */
+.tower-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.tower-list a {
+    padding: 18px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    color: var(--navy);
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.tower-list a:hover {
+    background: var(--pale);
+    border-color: var(--blue);
+}
+
+/* Floors and rooms */
+.floor-list,
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.floor-list a,
+.room-list a {
+    padding: 10px 15px;
+    background: var(--pale);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.floor-list a:hover,
+.room-list a:hover {
+    background: var(--blue);
+    color: white;
+}
+
+/* Floor sections */
+.floor {
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 90px;
+}
+
+.floor h3 {
+    color: var(--navy);
+}
+
+/* Room detail cards */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.details-grid article {
+    padding: 20px;
+    background: #f8fbff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    scroll-margin-top: 90px;
+}
+
+.details-grid article:target {
+    background: var(--pale);
+    border-color: var(--blue);
+}
+
+.details-grid article h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.details-grid article p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Application form */
+.apply-section h2 {
+    color: var(--navy);
+}
+
+.apply-section p {
+    color: var(--muted);
+}
+
+.apply-section fieldset {
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: 22px 0;
+    margin-bottom: 15px;
+}
+
+.apply-section legend {
+    color: var(--navy);
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+.apply-section label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.apply-section input:not([type="checkbox"]),
+.apply-section select,
+.apply-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fbfdff;
+}
+
+.apply-section button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 9px;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.apply-section button[type="reset"] {
+    background: #718096;
+}
+
+/* Responsive design */
+@media (max-width: 850px) {
+    .tower-section,
+    .room-details,
+    .apply-section {
+        width: 90%;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .tower-section,
+    .room-details,
+    .apply-section {
+        width: 94%;
+        padding: 17px;
+    }
+
+    .tower-list,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
