@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Availability | SAU</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">SAU</span><span><b>SAU</b><small>HOSTEL PORTAL</small></span></a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a class="active" href="rooms.html">Room Availability</a>
+      <a href="application.html">Apply for Hostel</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-heading">
+      <span class="eyebrow">ACCOMMODATION DIRECTORY</span>
+      <h1>Find your <span>room.</span></h1>
+      <p>Choose your hostel, tower and floor to explore available rooms.</p>
+    </section>
+
+    <section class="room-explorer panel">
+      <div class="section-heading compact">
+        <div><span class="eyebrow">STEP 01</span><h2>Select hostel</h2></div>
+      </div>
+      <div class="choice-row">
+        <button class="choice-btn selected" data-hostel="Boys">Boys Hostel</button>
+        <button class="choice-btn" data-hostel="Girls">Girls Hostel</button>
+      </div>
+
+      <div class="section-heading compact">
+        <div><span class="eyebrow">STEP 02</span><h2>Select tower</h2></div>
+      </div>
+      <div id="towerChoices" class="choice-row"></div>
+
+      <div class="section-heading compact">
+        <div><span class="eyebrow">STEP 03</span><h2>Select floor</h2></div>
+      </div>
+      <div id="floorChoices" class="choice-row"></div>
+
+      <div class="section-heading compact">
+        <div><span class="eyebrow">ROOM DIRECTORY</span><h2>Room details</h2></div>
+        <span id="roomCount" class="muted"></span>
+      </div>
+      <div id="roomGrid" class="room-grid">
+        <p class="muted">Loading room information...</p>
+      </div>
+      <p id="roomMessage" class="notice"></p>
+    </section>
+
+    <section class="legend">
+      <span><i class="dot available"></i> Available beds</span>
+      <span><i class="dot occupied"></i> Occupied beds</span>
+      <span><i class="dot full"></i> Fully occupied</span>
+    </section>
+    <p class="muted small">Occupancy is calculated using the room's occupied beds and total capacity. An application does not reserve a bed until approved by the hostel administrator.</p>
+  </main>
+
+  <footer><b>SAU Hostel Portal</b><span>South Asian University · Hostel Management System</span></footer>
+</body>
+</html>

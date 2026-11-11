@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Application | SAU</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">SAU</span><span><b>SAU</b><small>HOSTEL PORTAL</small></span></a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Room Availability</a>
+      <a class="active" href="application.html">Apply for Hostel</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main narrow">
+    <section class="page-heading">
+      <span class="eyebrow">ACCOMMODATION REQUEST</span>
+      <h1>Hostel <span>application.</span></h1>
+      <p>Complete the form below to submit your accommodation request.</p>
+    </section>
+
+    <form id="applicationForm" class="panel application-form">
+      <fieldset>
+        <legend>01 · Student details</legend>
+        <div class="form-grid">
+          <label>Full name<input name="student_name" required placeholder="Your full name"></label>
+          <label>Student ID<input name="student_id" required placeholder="University ID"></label>
+          <label>Course
+            <select name="course" required>
+              <option value="">Select course</option>
+              <option>B.Tech</option><option>B.A.</option><option>B.Sc.</option>
+              <option>M.A.</option><option>M.Sc.</option><option>M.Tech</option>
+              <option>Ph.D.</option><option>Other</option>
+            </select>
+          </label>
+          <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Phone number<input type="tel" name="phone" required></label>
+          <label class="full">Permanent address<textarea name="address" rows="3" required></textarea></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>02 · Parent / guardian details</legend>
+        <div class="form-grid">
+          <label>Guardian name<input name="guardian_name" required></label>
+          <label>Relationship
+            <select name="relationship" required>
+              <option value="">Select relationship</option>
+              <option>Father</option><option>Mother</option><option>Guardian</option><option>Other</option>
+            </select>
+          </label>
+          <label>Guardian phone<input name="guardian_phone" type="tel" required></label>
+          <label>Guardian email<input name="guardian_email" type="email"></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>03 · Emergency contact</legend>
+        <div class="form-grid">
+          <label>Contact name<input name="emergency_name" required></label>
+          <label>Relationship<input name="emergency_relation" required></label>
+          <label>Emergency phone<input name="emergency_phone" type="tel" required></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>04 · Hostel preference</legend>
+        <div class="form-grid">
+          <label>Hostel
+            <select name="hostel" id="applicationHostel" required>
+              <option value="">Select hostel</option><option>Boys</option><option>Girls</option>
+            </select>
+          </label>
+          <label>Tower
+            <select name="tower" id="applicationTower" required>
+              <option value="">Select tower</option>
+            </select>
+          </label>
+          <label>Floor<input type="number" name="floor_number" min="1" max="11" required></label>
+          <label>Preferred room<input type="number" name="room_number" min="1" required></label>
+        </div>
+      </fieldset>
+
+      <label class="check-label">
+        <input type="checkbox" name="declaration" required>
+        I confirm that the information provided is correct.
+      </label>
+
+      <button class="btn btn-primary submit-btn" type="submit">Submit Application →</button>
+      <p id="applicationMessage" class="notice" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer><b>SAU Hostel Portal</b><span>South Asian University · Hostel Management System</span></footer>
+</body>
+</html>
